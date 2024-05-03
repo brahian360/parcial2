@@ -1,0 +1,142 @@
+p {
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-shadow: yellow;
+    margin: 0px;
+}
+
+h1 {
+    color: black;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+h2 {
+    color: black;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+
+.containerInfo {
+    position: relative; /* Cambiamos a posición relativa para permitir la superposición */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(218, 213, 213);
+    width: 600px;
+    height: auto;
+    border-radius: 30px;
+    border: black 10px solid;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    z-index: 2; /* Aseguramos que la tarjeta esté por encima del mensaje de error */
+}
+
+.containerError {
+    position: relative; /* Cambiamos a posición relativa */
+    margin-top: 40px;
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    border: rgb(65, 65, 240) 10px solid;
+    background-color: rgb(240, 206, 13);
+    font-size: 14px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Aseguramos que el mensaje de error esté detrás de la tarjeta */
+}
+
+.containerError p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.containerEvolButton {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerEvolButton button {
+    background-color: rgb(240, 206, 13);
+    text-align: center;
+    width: 300px; /* Ajustamos el ancho para que coincida con el cuadro de búsqueda */
+    height: 40px; /* Ajustamos la altura */
+    border-radius: 30px; /* Aplicamos el mismo radio de borde que el cuadro de búsqueda */
+    border-color: rgb(65, 65, 240);
+    border-width: 10px;
+    font-size: 15px; /* Ajustamos el tamaño de fuente */
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.imgLogo {
+    width: 400px;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.pokemonImg {
+    width: 350px;
+    height: auto;
+}
+
+.containerFinder {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerFinder input {
+    background-color: rgb(240, 206, 13);
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    border-color: rgb(65, 65, 240);
+    border-width: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration-color: black;
+}
+
+.containerFinder button {
+    background: rgb(240, 206, 13);
+    border-radius: 50%;
+    border-color: rgb(65, 65, 240);
+    border-width: 5px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.containerFinder button img {
+    width: 16px;
+}
+
+.containerHabilities p {
+    margin-bottom: 10px;
+}
+
+main, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
